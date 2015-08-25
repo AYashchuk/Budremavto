@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+    <title>Деятельность</title>
+    <style type=text/css>
+        .product_head{
+            width: 100%;
+            background: linear-gradient(to bottom, rgba(232,232,232,193), rgba(205,205,205,193));
+            background-color: rgba(219,219,219,193);
+            padding: 5px 0px 5px 0px;
+            margin-top: 5px;
+            text-align: center;
+        }
+        #cmain{
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+        .main{
+            position: relative;
+            margin-left: /* 20px 0px 20px 0px*/ auto;
+            margin-right: /* 20px 0px 20px 0px*/ auto;
+            width: 100%;
+            padding: 5px 0px 5px 0px;
+            border-bottom:  2px solid #5A5A5A;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        .newAction{
+            margin: 10px;
+            width: 100%;
+            height: 20%;
+            overflow-x: hidden;
+        }
+        IMG{
+            height: 20%;
+            padding-right: 3px;
+            width: auto;
+            float: left;
+        }
+        .action{
+            margin: 3px;
+            padding: 3px;
+            /*           height: 20%;*/
+            border-radius: 2px;
+            border:  1px solid #5A5A5A;;
+
+        }
+    </style>
+</head>
+<body>
+<DIV class="product_head" align="center">
+    <H2><b>Наша деятельность</b></H2>
+</DIV>
+
+
+<DIV class="main">
+    <div class="action">
+
+        <IMG SRC="img/log.png">
+
+        <H4> Вот как то так</H4>
+
+    </div>
+    <!--                <div class="action">
+
+                        <IMG SRC="img/map.png">
+
+                        <H4> Вот как то так</H4>
+
+                    </div>
+                    <div class="action">
+
+                        <IMG SRC="img/map.png">
+
+                        <H4> Вот как то так</H4>
+
+                    </div>
+                    <div class="action">
+
+                        <IMG SRC="img/map.png">
+
+                        <H4> Вот как то так</H4>
+
+                    </div>
+                    <div class="action">
+
+                        <IMG SRC="img/map.png">
+
+                        <H4> Вот как то так</H4>
+
+                    </div>
+                    <div class="action">
+
+                        <IMG SRC="img/map.png">
+
+                        <H4> Вот как то так</H4>
+
+                    </div>
+                    <div class="action">
+
+                        <IMG SRC="img/map.png">
+
+                        <H4> Вот как то так</H4>
+
+                    </div>
+                    <div class="action">
+
+                        <IMG SRC="img/map.png">
+
+                        <H4> Вот как то так</H4>
+
+                    </div>-->
+
+</DIV>
+<DIV class="newAction">
+    <Form  action="/myServlet" method="POST"  id="login" accept-charset="UTF-8">
+        <table align="center">
+            <tr>
+                <td><H5>Введите пароль:</H5></td>
+                <td><INPUT TYPE="password" ID="pass"  SIZE="15" name="pass"></td>
+            </tr>
+            <tr>
+                <td><H5>Введите описание:</H5></td>
+                <td><textarea rows="10" cols="45" name="text" ></textarea></td>
+            </tr>
+            <tr>
+                <td><H5>Прикрепить файл:</H5></td>
+                <td><INPUT TYPE="button"type="file" ID="sendImg" VALUE="выбрать фвйл" style="margin-right: 15px"></td>
+            </tr>
+            <td colspan="2" align="center"><INPUT TYPE="button" ID="sendForm" VALUE="отправить" style="margin-right: 15px" ></td>
+
+        </table>
+
+    </Form>
+
+</DIV>
+<script type="text/javascript">
+
+    //            var width = $(window).width();
+    var cmain = $('#cmain');
+    var height =   cmain.height() * 0.8;
+
+    $('.main').css('height' , height);
+    var action = $('.action');
+    action.css('height', height/5);
+
+
+    var Img = $('.action IMG');
+    Img.css('height', height/5);
+    action.css('height',Img.height() )
+
+
+    $("#sendForm").click( sendForm );
+    function sendForm(){
+        var value = $('TEXTArea');
+        var pass = $('#pass');
+        var val_pas = pass.val();
+        var encodValue = encodeURIComponent(value.val());
+        value.val('');
+        pass.val('');
+        $.post(
+                "/myServlet",
+                {
+                    text:  encodValue,
+                    pass:val_pas
+                },
+                onAjaxSuccess
+        );
+    }
+
+    function onAjaxSuccess(data)
+    {
+        // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
+        $('.main').append(data);
+    }
+</script>
+
+</body>
+
+
+</html>

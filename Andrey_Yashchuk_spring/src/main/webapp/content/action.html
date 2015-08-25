@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+    <title></title>
+    <style type=text/css>
+        .action{
+            width: 100%;
+            border: 1px solid #000;
+
+        }
+        .text{
+            width: 60%;
+            height: auto;
+            float: left;
+        }
+        IMG{
+            padding-right: 3px;
+            width: 150px;
+            width: auto;
+            float: left;
+        }
+
+
+    </style>
+</head>
+<body>
+        <div class="action">
+            <DIV class="image" align="center">
+                <IMG SRC="img/map.png">
+                <div class="text">
+                    Вот как то так
+                </div>
+            </DIV>
+        </div>
+
+
+</body>
+<script type="text/javascript">
+    console.log("log action")
+    //            var width = $(window).width();
+    var cmain = $('#cmain');
+    var height =   cmain.height()/5;
+    $('.action').css('height', height);
+
+</script>
+</html>

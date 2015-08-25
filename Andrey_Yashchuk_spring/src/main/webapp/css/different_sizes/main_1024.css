@@ -1,0 +1,209 @@
+BODY { color: #3B4043;
+    background-color: #F0FFF0;
+    overflow-x: hidden;
+    margin: 0px;
+    /*  background: linear-gradient(to top, #F0FFF0, #9CD49C);
+      background-image: url(img/bg.jpg);*/
+    font-family: Verdana, Arial, sans-serif;	   }
+P { font-size: 10pt;
+    text-align: justify}
+H1, H2, H6 { font-weight: normal;
+    font-family: Arial, sans-serif;
+    /*text-shadow: #000 1px 1px */}
+H1 {
+    font-family: Mistral;
+    font-size:16pt;
+    color:#FFFFFF;
+    /*text-shadow: #458B74 3px 3px*/ }
+H2 { font-size: 14pt ;
+    letter-spacing: 1mm;}
+H3{font-size: 12pt ;
+    letter-spacing: 1mm;
+}
+H5{
+    font-size: 8pt
+}
+H4{font-size: 10pt ;
+/*    letter-spacing: 1mm;
+    text-shadow: #458B74 2px 2px;*/
+}
+H6 { font-size: 6pt }
+TABLE {
+    width: 100%;
+    font-size: 6pt }
+BLOCKQUOTE P,ADDRESS { font-size: 14pt;
+    font-style: italic;
+    text-align: right}
+UL { list-style-type: circle }
+#navbar{
+    border-top: thin solid #646056;
+    border-bottom: thin solid #646056;  /*внешняя рамка для ссылок навигации*/
+    border-left: thin solid #646056;
+    background: #E1D1FF;
+}
+#slider_menu A{
+    color: #FFFFFF;
+}
+#navbar > LI { font-family: Arial, sans-serif;
+    font-size: 10pt;
+    list-style-type: none;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    margin-left: -40px;
+    background: linear-gradient(to bottom, #F9C356, #F5A505);
+    background-color: #F9C356;
+}
+#navbar LI UL { list-style-type: none;
+    margin-left: -40px;
+    border:none;
+    margin-top: 5px }
+#navbar LI UL LI { font-size: 12pt;
+    text-transform:none;
+    padding: 5px 0px 5px 0px;
+    margin: 1px 0px 1px 0px;
+    border:1px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#cheader {
+    width: 100%;
+    color:#ECFFE0;
+    overflow:hidden;
+    text-align:center;
+    margin-bottom:3px;}
+#head{
+    position: absolute;
+    background-color: rgba(29,49,74,1);
+    width: 100%;
+    height: 150px;
+    z-index:1;
+    -webkit-box-shadow: 0px -58px 103px 125px rgba(29,49,74,1);
+    -moz-box-shadow: 0px -58px 103px 125px rgba(29,49,74,1);
+    box-shadow: 0px -10px 103px 125px rgba(29,49,74,1);
+}
+#wrap {
+ /*      background-color: #000000;*/
+    position: absolute;
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    z-index:2;
+}
+#cnavbar {
+    width: 18%;
+    height: 262px;
+    float: left;
+    cursor: pointer;
+}
+#cmain {
+    width: 60%;
+    float: left;
+    padding: 3px 3px 3px 6px;
+    overflow:auto;
+    min-height: 800px;
+    border-right: thin solid #646056;
+    border-left: thin solid #646056;
+    background-color: #FFFFFF;
+    /*background-color: #FFFFF0;*/
+    box-shadow:0 1px 4px rgba(0, 0, 0, .3),
+    -23px 0 20px -23px rgba(0, 0, 0, .8),
+    23px 0 20px -23px rgba(0, 0, 0, .8),
+    0 0 40px rgba(0, 0, 0, .1) inset;}
+
+#contacts{
+    background: linear-gradient(to bottom, #F9C356, #F5A505);
+    background-color: #F9C356;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    margin-left:1px;
+    padding-right:3px;
+    padding-left:3px;
+    padding-top:7px;
+    width: 19%;
+    float: left;
+    text-align: right;
+
+}
+#ccopyright {
+    width: 100%;
+    height: 55px;
+    clear: both;
+    color:#000000;
+    background-color: #F5A505;
+    border: thin solid #646056;
+}
+#logo {
+    position: relative;
+    top: 3px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 320px;
+    height: 160px;}
+#logo IMG{
+    width: auto;
+    height: 160px;
+}
+
+#search {
+    width: 100%;
+    color:#FFFFFF;}
+#search FORM P{
+    padding: 8pt;
+    text-align: right;
+}
+#search FORM{
+    background: linear-gradient(to bottom, #D3D3D3, #EEE9E9);
+    background-color: #D3D3D3;
+    font-size: 10pt;
+    margin-left: 5px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+#ccompany {
+    width: 50%;
+    float: left ;
+    clear: both}
+IMG  { display: block }
+#cdeveloper, #ccompany{
+    padding: 10px 10px 10px 10px;
+}
+#bottom{
+    position: absolute;
+    background-color: rgba(29,49,74,1);
+    width: 100%;
+    height: 120px;
+    z-index:1;
+}
+DFN { outline: thin dotted #B1BEC6 }
+A {
+    font-weight: 900;
+    font-size: 12px;
+    text-decoration: none;
+    color: #000000; /* Цвет обычной ссылки */
+    /*padding: 2px;  Поля вокруг текста */
+}
+A:visited {
+    color: #000000; /* Цвет посещенной ссылки */
+}
+A:hover {
+    text-decoration: none; /* Убираем подчеркивание */
+    border-color: #000000}
+/*color: #3B4043; /* Цвет ссылки при наведении на нее курсора мыши */
+/*background: #E1D1FF; Цвет фона */
+/* }*/
+#cnavbar UL LI:hover{
+    /*background: #FFFFF0;*/
+    border-color: #3B4043}
+.Ahovered {color: #FFFFFF !important;	}
+.hovered { background: linear-gradient(to bottom, #403D37, #000000) !important;				}
+.hovered1 {			border: 2px solid #000000 !important;
+    background: linear-gradient(to bottom, #F9C356, #F5A505) !important;
+    background-color:  #F9C356  !important;
+    box-shadow: 11px 13px 28px 9px #3a3a3a;
+
+}
+.hovered2 {
+    background: linear-gradient(to bottom, #938E83, #757169) !important;
+    background-color: #938E83 !important;
+}
+.hovered_mousedown{ background: linear-gradient(to bottom, #757066, #403D37) !important;		}
