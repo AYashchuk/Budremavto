@@ -1,10 +1,9 @@
 package web.dao;
 
-import web.domain.User;
 import org.hibernate.SessionFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
+import web.domain.User;
 
 import java.util.List;
 

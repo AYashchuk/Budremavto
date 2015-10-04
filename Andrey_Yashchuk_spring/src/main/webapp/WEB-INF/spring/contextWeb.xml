@@ -24,8 +24,9 @@ http://www.springframework.org/schema/tx
 
     </bean>
 
-    <bean id="pass" class="java.lang.String">
-        <constructor-arg value="andrew"/>
+    <bean id="andrew" class="web.domain.User">
+       <property name="name" value="${user.name}"/>
+        <property name="password" value="andrew1111"/>
     </bean>
 
 
