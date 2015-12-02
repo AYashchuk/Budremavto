@@ -16,7 +16,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.Locale;
 
 /**
- * Created by admin on 24.07.2015.
+ * @author Yashchuk A.F.
  */
 @WebServlet("/myServlet")
 public class EventServlet extends HttpServlet {

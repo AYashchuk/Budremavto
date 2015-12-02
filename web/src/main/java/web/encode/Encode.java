@@ -1,7 +1,7 @@
 package web.encode;
 
 /**
- * Created by admin on 29.07.2015.
+ * @author Yashchuk A.F.
  */
 public class Encode {
     private String massage;

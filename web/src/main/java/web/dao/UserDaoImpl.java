@@ -8,7 +8,7 @@ import web.domain.User;
 import java.util.List;
 
 /**
- * Created by admin on 13.01.2015.
+ * @author Yashchuk A.F.
  */
 @Repository
 @Transactional

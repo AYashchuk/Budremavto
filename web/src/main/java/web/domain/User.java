@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Created by admin on 11.12.2014.
+ * @author Yashchuk A.F.
  */
 @Entity
 @Table(name = "USERS")
